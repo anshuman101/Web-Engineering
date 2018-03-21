@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title> Contact US </title>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+</head>
+<body style="background-image=url(Images/4.jpg);">
+<div class="transbox">
+<form>
+<ul class="form-style-1" type="GET">
+    <h1><strong><u> Contact US </u></strong></h1>
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /><input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="field3" class="field-long" />
+    </li>
+    <li>
+        <label>Gender <span class="required">*</span></label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+    </li>  
+    <li>
+        <label>Subject</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Advertise</option>
+        <option value="Seller">Seller</option>
+        <option value="Complaint">Complaint</option>
+        </select>
+    </li>
+    <li>
+        <label>Contact No. <span class="required">*</span></label>
+        <input type="Phone" name="field3" class="field-long" placeholder="Phone No." />
+    </li>
+    <li>
+        <label>Your Message <span class="required">*</span></label>
+        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+    </li>
+    <li>
+        <input type="submit" value="Submit" onsubmit="Your Message has been recorded" />
+    </li>
+</ul>
+</form>
+</div>
+</body>
+</html>
