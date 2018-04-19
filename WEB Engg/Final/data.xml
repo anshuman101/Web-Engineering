@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="format.xsl" ?>
+<posts>
+  <pd>
+    <id>0000</id>
+    <title>Book Condition is not specified by the Seller. What should I do? Is it safe to buy the book?</title>
+    <author>Upvoted 890 times</author>
+    <description>The Badge of Trust of Books R Us accredits the sellers before registering on the website. SHOP On!</description>
+    <time>1/2/2010</time>
+    <replies>10490</replies>
+    <thanks>19850</thanks>
+  </pd>
+    <pd>
+    <id>0001</id>
+    <title>Community Guidelines</title>
+    <author>Books R Us ADMIN</author>
+    <description>Read these rules before posting anything. Fraud commiters beware!</description>
+    <time>23/6/2010</time>
+    <replies>109</replies>
+    <thanks>198</thanks>
+  </pd>
+    <pd>
+    <id>0101</id>
+    <title>Replacement Policy</title>
+    <author>Books R Us</author>
+    <description>Our complete referal guide and replacement policy here.</description>
+    <time>6/4/2009</time>
+    <replies>10000</replies>
+    <thanks>195</thanks>
+  </pd>
+    <pd>
+    <id>0091</id>
+    <title>How to track My Orders???</title>
+    <author>Upvoted 90 times</author>
+    <description>The procedure as well as basic training in using Books R Us.</description>
+    <time>13/2/2001</time>
+    <replies>1000</replies>
+    <thanks>9195</thanks>
+</pd>
+</posts>

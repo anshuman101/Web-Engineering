@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>CSS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+#xml_form{
+  width: 600px;
+}
+</style>
+<body>
+<div class="top">
+  <div class="bar white padding card" style="letter-spacing:4px;">
+    <a href="#home" class="bar-item button">BOOKS R US</a>
+    <div class="right hide-small">
+      <a href="#about" class="bar-item button">About</a>
+      <a href="#publishers" class="bar-item button">Publishers</a>
+      <a href="#login" class="bar-item button">Login</a>
+    </div>
+  </div>
+</div>
+
+<header class="display-container content wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="image" src="Images/4.jpg" alt="Books R Us" width="1600" height="800">
+  <div class="display-bottomleft padding-large opacity">
+    <h1 class="xxlarge" style="color: white">Books R Us</h1>
+  </div>
+</header>
+
+<div class="content" style="max-width:1100px">
+
+  <div class="row padding-64" id="about">
+    <div class="col m6 padding-large hide-small">
+     <img src="Images/1.jpg" class="round image opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="col m6 padding-large">
+      <h1 class="center">About Books R Us</h1>
+      <h5 class="center">Established 2017</h5>
+      <p class="large">If you spend 15 min a day in reading , exposes you to more than 1,000,000 words per year.<br>Benefits of reading:<br></p>
+      	<ol type='1'>
+      		<li>Increases verbal/writing skills - Reading improves your ability to comprehend written material—a skill helpful in any career.</li>
+      		<li>Helps articulate thoughts - Reading improves your vocabulary and makes you a more creative thinker.</li>
+      		<li>Enhances problem solving skills - The structure of fiction—with a beginning, middle and end—trains the brain to think in sequence, to link cause, effect and significance.</li>
+			<li>Increases concentration - Reading is more demanding on your brain than processing images or speech. This neurobiological workout keeps your brain sharp, and improves powers of concentration.</li>
+			<li>Improves memory - Modern life bombards us with too much information, which we learn to tune out. Reading reduces stress by allowing your brain to focus on one task.</li>
+			<li>Reading improves the relaxation response,lowering heartbeat</p>
+			 and pulse rate.</li>
+		</ol>
+      <p class="large text-grey hide-medium">We at Books R Us - are entirely for the Reader.For any editorial inquiry,please write to editorial@booksrus.com.
+
+We accept editorial submissions on varied subjects including, art, design, photography, architecture, fiction, non fiction, children's subjects, cuisine etc.
+
+Please send all editorial submissions to the e-mail given above.
+</p>
+    </div>
+  </div>
+  
+  <hr>
+  <div class="row padding-64" id="publishers">
+    <div class="col l6 padding-large">
+      <h1 class="center">Our Publishing Partners</h1><br>
+      <h3><a href="https://harpercollins.co.in/">Harper Collins Publications</a></h3>
+      <p class="text-grey">HarperCollins Publishers India Ltd. is a wholly owned subsidiary of HarperCollins Worldwide.</p><br>
+    
+      <h3><a href="http://www.greyoak.in/">Westland Publications Ltd.</a></h3>
+      <p class="text-grey">Greyoak Westland and Silverfish Westland is a joint publishing effort by Westland Ltd and Greyoak Publishers.</p><br>
+    
+      <h3><a href="https://penguin.co.in/">Penguins INDIA</a></h3>
+      <p class="text-grey">We are a publishing house that understands your point of view. We know your taste and much like you, are plain crazy about books.That's exactly you need to check out our newest collection!</p><br>
+    
+      <h3><a href="http://rupapublications.co.in/">RUPA Publications</a></h3>
+      <p class="text-grey">Born to Be Hanged: Political Biography of Zulfikar Ali Bhutto. by Syeda Hameed. Previous Next. Subscribe to Our Newsletter. Email. Rupa Publications India © All Rights Reserved</a></p><br>
+    </div>
+    
+    <div class="col l6 padding-large">
+      <img src="Images/7.jpg" class="round image opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr style="width: 10px;color: black" >
+
+<div class="calc">
+<h1> Your Desired Book's <strong> COST </strong> CALCULATOR </h1>
+
+<form name="xml_form">
+  Book Name<br>
+  <input type="text" name="name" placeholder="e.g Harry Potter">
+  <br>
+  <br>
+  Book Cost<br>
+  <input type="number" id="cost" value="1000" placeholder="e.g Rs. 1000">
+  <br>
+  <br>
+  <input type="radio" value="a" name="cbox"> 1-3 years
+  <input type="radio" value="b" name="cbox"> 4-8 years 
+  <input type="radio" value="c" name="cbox"> >8 years 
+  <br><br>
+  <input type="submit" value="Submit">
+  
+  <br><br>
+  FINAL COST:
+  <input type="text" id="pricetag" value="1100">
+
+</form>
+
+</div>
+<br><br>
+
+<footer id="login">
+	<center>
+  <p><h3>GET in Touch @ <a href="finalform.html"  class="hover-text-green"><strong>LOGIN or SIGN UP !!</strong></a></h3></p>
+  </center>
+</footer>
+<script type="text/javascript">
+   var cost = document.getElementById("cost").value;
+   var tag = document.getElementById("pricetag");
+  
+  var radios = document.forms["xml_form"].elements["cbox"];
+  for(var i = 0, max = radios.length; i < max; i++) {
+    radios[i].onclick = function() {
+        var num=i;
+         console.log("clicked radio "+ i);
+    console.log("The cost is " + cost)
+        CalculateCost(cost,i);
+
+    }
+}  
+function CalculateCost(cost,i) {
+    console.log("clicked radio "+ i);
+    console.log("The cost is " + cost)
+    var price;
+  if(i==0)
+  {
+      price = cost;
+  }
+  if(i==1)
+  {
+      price = cost+0.1*cost;
+  }  
+  else
+    price=cost + 0.5*cost;
+
+    tag.value=price.value;
+}
+</script>
+</body>
+</html>

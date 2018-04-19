@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title> Contact US </title>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <script src="form.js"></script>
+</head>
+<body style="background-image=url(Images/4.jpg);">
+<div class="transbox">
+    <form name="myForm" class="form-style-1" action="Login.jsp">
+    <h1><center> LOG IN </center></h1>
+    <ul>
+    <li>
+        <label>UserName <span class="required">*</span></label>
+        <input type="UserName" name="field10" class="field-long" />
+    </li>
+    <li>
+        <label>Password <span class="required">*</span></label>
+        <input type="password" name="field11" class="field-long" />
+    </li>
+    <li>
+        <button type="submit" class="button" name="action" onClick="return validate();" value="Login" ></button>
+    </li>
+    </ul>
+</form>
+
+<form ">
+<ul class="form-style-1" type="POST" name="Signup">
+    <h1><center><strong><u> OR Sign Up </u></strong></center></h1>
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /><input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="field3" class="field-long" />
+    </li>
+    <li>
+        <label>UserName <span class="required">*</span></label>
+        <input type="UserName" name="field8" class="field-long" />
+    </li>
+    <li>
+        <label>Password <span class="required">*</span></label>
+        <input type="password" name="field9" class="field-long" />
+    </li>
+    <li>
+        <label>Gender <span class="required">*</span></label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+    </li>  
+    <li>
+        <label>Subject</label>
+        <select name="field4" class="field-select">
+        <option value="Advertise">Advertise</option>
+        <option value="Seller">Seller</option>
+        <option value="Complaint">Complaint</option>
+        </select>
+    </li>
+    <li>
+        <label>Contact No. <span class="required">*</span></label>
+        <input type="Phone" name="field6" class="field-long" placeholder="Phone No." />
+    </li>
+    <li>
+        <input type="submit" value="Sign Up" onclick="validation(this.form)" />
+    </li>
+</ul>
+</form>
+</div>
+</body>
+</html>
